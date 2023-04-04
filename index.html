@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GYM To Train Fitness</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="./script.js"></script>
+</head>
+
+<body link="black" vlink="black">
+	<header>
+		<nav>
+			<h2 class="logo"></h2>
+			<ul>
+				<a href="#">
+					<li>Home</li>
+				</a>
+				<a href="#">
+					<li>Shop</li>
+				</a>
+				<a href="#">
+					<li>About</li>
+				</a>
+				<a href="#">
+					<li>Contact</li>
+				</a>
+				<a href="#">
+					<li>FAQ</li>
+				</a>
+			</ul>
+		</nav>
+
+		<div class="banner">
+			<div class="carousel">
+				<div class="carousel_inner">
+					<div class="carousel_item carousel_item__active">
+						<img src="./img/image1.jpg" alt="" class="carousel_img">
+
+
+					</div>
+					<div class="carousel_item">
+						<img src="./img/banner2.jpg" alt="" class="carousel_img">
+					</div>
+					<div class="carousel_item">
+						<img src="./img/image3.jpg" alt="" class="carousel_img">
+					</div>
+					<div class="carousel_item">
+						<img src="./img/image4.jpg" alt="" class="carousel_img">
+					</div>
+					<div class="carousel_item">
+						<img src="./img/image5.jpg" alt="" class="carousel_img">
+					</div>
+					<div class="carousel_item">
+						<img src="./img/image6.jpg" alt="" class="carousel_img">
+					</div>
+				</div>
+			</div>
+
+			<div class="intro">
+
+				<h1><b>BE</b> <span class="change_content"> </span> <span style="margin-top: -10px;"> | </span> </h1>
+				<p></p>
+				<button class="btn">Contact Now</button>
+			</div>
+		</div>
+	</header>
+	<div class="row">
+		<div class="card" style="color: white;background: var(--secondary-color);">
+			<h2><a href="files/calculator.html">Calories</a></h2><br>
+			<p style="color: black">The amount of energy in an item of food or drink is measured in calories.<br><br><b>About Calories
+					Counter
+					:</b><br><br>The Calorie Calculator can be used to estimate the number of calories a person needs to
+				consume each day.</p>
+
+		</div>
+		<div class="card" style="background: #215971;">
+			<h2 style="color: var(--primary-color);"><a href="files/BMI.html">BMI</a></h2><br>
+			<p style="color: black">Body mass index (BMI) is a measure of body fat based on height and
+				weight that applies to adult men and women.<br><br><b>About BMI Calculator :</b><br><br>The Body Mass
+				Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking
+				age into consideration.</p>
+<p style="color: var(--tertiary-color);"></p>
+		</div>
+		<div class="card" style="color: white;background: var(--secondary-color);">
+			<h2><a href="files/dietplan.html">DIET PLANS</a></h2><br>
+			<p style="color: black">Planning diets refers to determining what usual nutrient intake should be. Regardless of whether one is
+				planning diets for individuals or groups, the goal is to have diets that are nutritionally adequate, or
+				conversely, to ensure that the probability of nutrient inadequacy or excess is acceptably low.</p>
+		</div>
+		<div class="card" style="color: white;background: var(--primary-color);">
+			<h2><a href="files/BMR.html">Check Your BMR</a></h2><br>
+			<p style="color: black"></p>
+		</div>
+
+
+	</div>
+	<section class="c">
+
+		<h1 class="main-title">Best Fitness Tracker Software!<br><br><br>
+			<h3>Hustle for The Muscle</h3>
+		</h1>
+		
+	</section>
+	<section class="c1">
+		<div class="container reveal">
+			<h2>ACTIVITIES</h2>
+			<div class="c11">
+				<div class="maincontainer">
+
+					<div class="thecard">
+
+						<div class="thefront">
+							<h1>RUNNING</h1>
+							<p>Benefits Of Running are:<br><br>
+
+								1)help to build strong bones, as it is a weight bearing exercise,strengthen muscles.
+								<br><br>
+								2)improve cardiovascular fitness.<br><br>
+								3)burn plenty of kilojoules.<br><br>
+								4)help maintain a healthy weight.
+							</p>
+						</div>
+
+						<div class="theback">
+							<h1></h1>
+							<p></p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="maincontainer1">
+
+					<div class="thecard1">
+
+						<div class="thefront1">
+							<h1>PUSHUPS</h1>
+							<p>1)Push-ups increase upper-body strength.<br><br>2)Push-ups are good for your
+								core<br><br>3)Push-ups can improve your posture<br><br>4)Push-ups boost heart
+								health.<br><br>5)Push-ups target multiple muscle groups </p>
+						</div>
+
+						<div class="theback1">
+							<h1></h1>
+							<p></p>
+						</div>
+
+					</div>
+				</div>
+				<div class="maincontainer2">
+
+					<div class="thecard2">
+
+						<div class="thefront2">
+							<h1>Squats</h1>
+							<p>1)Strengthens your core.<br><br>2)Reduces the risk of injury.<br><br>3)Crushes
+								calories.<br><br>4)Strengthens the muscles of your lower body.<br><br>5) Boosts athletic
+								ability and strength.</p>
+						</div>
+
+						<div class="theback2">
+							<h1></h1>
+							<p></p>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', reveal,);
+		function reveal() {
+			var reveals = document.querySelectorAll('.reveal');
+			for (var i = 0; i < reveals.length; i++) {
+				var windowheight = window.innerHeight;
+				var revealtop = reveals[i].getBoundingClientRect().top;
+				var revealpoint = 150;
+				if (revealtop < windowheight - revealpoint) {
+					reveals[i].classList.add('active');
+				}
+				else {
+					reveals[i].classList.remove('active');
+				}
+			}
+		}
+
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+	--primary-color: #215972;
+	--secondary-color: grey;
+	--tertiary-color:#061528;
+	--font: 'Poppins', sans-serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.btn{
+	padding: .6rem .8rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--primary-color);
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid var(--primary-color);
+	transition: .3s;
+	cursor: pointer;
+}
+.btn:hover{
+	background: transparent;
+}
+body{
+	background: black;
+	font-family: var(--font);
+}
+
+nav{
+	position:absolute;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background: var(--primary-color);
+}
+
+.logo::before{
+	content: "GYM";
+	color: white;
+}
+.logo::after{
+	content: "Today";
+	color: black;
+}
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	color: var(--primary-color);
+}
+
+.banner{
+	background: url(img/banner2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 85vh;
+}
+
+.intro{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: white;
+}
+
+.intro h2,p{
+	display: block;
+	width: 60%;
+}
+
+.intro h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+.intro .btn{
+	margin-top: 2rem;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+.card{
+	width: 33.3%;
+	height: 600px;
+	padding: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.card p{
+	margin-bottom: -60px;
+}
+.card h2{
+	text-transform: uppercase;
+	margin-left: -20px;
+	margin-top: 50px;
+	
+}
+.card a{
+	text-decoration: none;
+}
+/* 
+   Creator           : Coding's Time
+   Youtube Channel   : https://www.youtube.com/channel/UC6dnKqrImGWqMb9ty1n0Ziw
+   Github Profile    : https://github.com/codingstime
+ */
+
+/* reset */
+:root{
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+ }
+ 
+ *{
+	margin: 0;
+	box-sizing: border-box;
+ }
+ 
+ /* carousel */
+ .carousel_inner{
+	width: 100%;
+	overflow: hidden;
+ }
+ 
+ .carousel_inner::after{
+	content: "";
+	display: block;
+	clear: both;
+ }
+ 
+ .carousel_item{
+	position: relative;
+	float: left;
+	display: none;
+	width: 100%;
+	margin-right: -100%;
+ }
+ 
+ /* slide effect */
+ .carousel_item__active,
+ .carousel_item__pos_next{
+	display: block;
+ }
+ 
+ .carousel_item__pos_next{
+	left: 100%;
+ }
+ 
+ .carousel_item__next{
+	transform: translateX(-100%);
+	transition: transform .5s ease-in-out;
+ }
+ 
+ /* fade effect */
+ .carousel__fade .carousel_item__pos_next{
+	left: 0;
+	opacity: 0;
+ }
+ 
+ .carousel__fade .carousel_item__next{
+	transform: none;
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+ }
+ 
+ .carousel__fade .carousel_item__active.carousel_item__next{
+	opacity: 0;
+ }
+ 
+ /* carousel */
+ .carousel_img{
+	display: block;
+	width: 100%;
+	height: 800px;
+ }
+ 
+ .carousel_caption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 3rem 2.5rem;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+ }
+ 
+ .carousel_title{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+ }
+ 
+ .carousel_description{
+	margin-top: .75rem;
+	line-height: 150%;
+ }
+ .change_content:after {
+    content: "";
+    animation: changetext 14s infinite linear;
+    color:  #fb752d;
+  }
+  
+  @keyframes changetext {
+    0% {
+      content: "STRONG";
+    }
+    20% {
+      content: "PHYSICALLY FIT";
+    }
+    35% {
+      content: "MOTIVATED";
+    }
+    60% {
+      content: "HEALTHY";
+    }
+    80% {
+      content: "HAPPY";
+    }
+    100% {
+      content: "ACTIVE";
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  
+  section.c{
+	background-image: url(https://c0.wallpaperflare.com/preview/773/46/359/woman-female-bar-strong.jpg);
+	background-size:cover;
+  }
+/*section h3{
+	text-align: left;
+	margin-left: -1200px;
+}*/
+  section{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  section:nth-child(1){
+	color:#fff;
+  }
+section:nth-child(2){
+	color: #1D212B;
+	background: #fff;
+}
+section:nth-child(3){
+	color:#fff;
+  }	
+  section:nth-child(4){
+	color:  #fb752d;
+	background: #fff;
+}
+section .container{
+	margin: 100px;
+}
+section h1{
+	font-size: 60px;
+margin-bottom: -100px;
+	margin-left: 05px;
+	margin-top: 10px;
+}
+section h3{
+	text-align: left;
+	margin-left: -920px;
+	margin-top: -150px;
+	font-size: 25px;
+}
+section h2{
+	font-size: 70px;
+margin-top: 100px;
+	text-transform: uppercase;
+}
+section .c11{
+	display:flex;
+}
+/*section .cards .text-card{
+	background: #fff;
+	margin: 20px;
+	padding: 20px;
+}
+section .cards .text-card h3{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}*/
+@media (max-width: 900px){
+	section h1{
+		font-size: 40px;
+	}
+	section .thecard{
+		flex-direction: column;
+	}
+	
+}
+.reveal{
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: all 2s ease;
+}
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+}
+section.c1{
+background-image: url(https://c4.wallpaperflare.com/wallpaper/874/276/912/fitness-model-dark-exercising-muscles-wallpaper-preview.jpg);
+background-size: cover;
+height: 600px;
+}
+.maincontainer{
+
+	width: 300px;
+	height: 390px;
+	background: none;
+margin-left: -270px;
+margin-top: 250px;
+margin-bottom: -150px;
+	transform: translate(-50%, -50%);
+
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+	transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+	position: absolute;
+	font-style: italic;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background:  #3a3d3e;
+	color: #000;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background-image: url(https://c0.wallpaperflare.com/preview/740/290/352/active-activity-adult-road.jpg);
+	background-position: center;
+	background-size: 540px;
+	color: #333;
+	text-align: center;
+	transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront h1, .theback h1{
+	font-family: 'zilla slab', sans-serif;
+	padding: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: underline;
+  }
+  
+  .thefront p, .theback p {
+    font-family: 'zilla slab', sans-serif;
+    position: absolute;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    width: 280px;
+	padding-top: 100px;
+    word-wrap: break-word;
+}
+
+  .maincontainer1{
+	display: flex;
+	margin-left: 200px;
+	margin-top: 250px;
+	width: 300px;
+	height: 390px;
+	background: none;
+	margin-bottom: -150px;
+	transform: translate(-50%, -50%);
+
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard1{
+	position: relative;
+	display: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard1:hover{
+	transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront1{
+	position: absolute;
+	font-style: italic;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background:  #3a3d3e;
+	color: #000;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/938/467/793/men-fitness-pushups-wallpaper-preview.jpg);
+	background-position: center;
+	background-size: 500px;
+	color: #333;
+	text-align: center;
+	transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront1 h1, .theback1 h1{
+	font-family: 'zilla slab', sans-serif;
+	padding: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: underline;
+  }
+  
+  .thefront1 p, .theback1 p{
+    font-family: 'zilla slab', sans-serif;
+    position: absolute;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    width: 280px;
+	padding-top: 100px;
+    word-wrap: break-word;
+  }
+  .maincontainer2{
+	display: flex;
+	margin-left: 200px;
+	margin-top: 250px;
+	margin-right: -650px;
+	margin-bottom: -150px;
+	width: 300px;
+	height: 390px;
+	background: none;
+
+	transform: translate(-50%, -50%);
+
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard2{
+	position: relative;
+	display: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard2:hover{
+	transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront2{
+	position: absolute;
+	font-style: italic;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background:  #3a3d3e;
+	color: #000;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/466/967/812/fitness-gym-squats-wallpaper-preview.jpg);
+background-position: center;
+	color: #333;
+	text-align: center;
+	transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront2 h1, .theback2 h1{
+	font-family: 'zilla slab', sans-serif;
+	color: #fff;
+	padding: 30px;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: underline;
+	
+  }
+  
+  .thefront2 p, .theback2 p{
+	font-family: 'zilla slab', sans-serif;
+    position: absolute;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    width: 280px;
+	padding-top: 100px;
+    word-wrap: break-word;
+  }
+  #reveal-effect {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	/* transition: all 5s; */
+  }
+  
